@@ -1,6 +1,9 @@
 import os.path
+import sys
 
 import pandas as pd
+
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..')))
 from base import DATA_DIR
 
 def save_to_csv(data, fname):
